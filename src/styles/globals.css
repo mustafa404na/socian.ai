@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.scrollCointainer {
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  position: relative;
+}
+.scrollCointainer > .scrollElement {
+  scroll-snap-align: start;
+  /* scroll-snap-stop: always; */
+}
+
+@layer components {
+  .flexContainer {
+    @apply flex flex-col lg:flex-row sm:flex-col uppercase font-light tracking-widest min-h-screen justify-center align-middle items-center py-20 lg:py-0 p-5;
+  }
+  .flexHalf {
+    @apply w-full h-1/2 sm:w-full sm:h-1/2 lg:h-screen  lg:w-2/4  flex flex-col justify-center align-middle items-center lg:items-start;
+  }
+  .bigHeading {
+    @apply flex flex-col gap-4 text-4xl lg:text-4xl xl:text-5xl font-light;
+  }
+  .paragraph {
+    @apply mt-6 font-thin text-base lg:text-lg desktop_md:text-[25px] desktop_lg:text-[25px];
+  }
+
+  .singleIndustryIcon {
+    @apply custom-border flex lg:mx-12 md:mx-12 mx-[30px] lg:p-[25px] md:p-[25px] p-[15px] items-center self-center lg:w-[84px] md:w-[84px] w-[60px] justify-center rounded-[22px];
+  }
+
+  .footerHeading {
+    @apply xl:text-2xl lg:text-base font-bold;
+  }
+
+  .defultFont {
+    @apply text-lg;
+  }
+
+  .AbourFlexContainer {
+    @apply flex flex-col  sm:flex-col uppercase font-light tracking-widest min-h-screen align-middle items-center pt-[110px] pb-20  xl:px-[70px] lg:px-[30px] px-[15px];
+  }
+  .AbourFlexChild {
+    @apply w-full h-1/2 sm:w-full sm:h-1/2 lg:h-screen lg:w-2/4  flex flex-col justify-center align-middle items-start px-10 md:px-20;
+  }
+  .AboutFlexChildWorper {
+    @apply flex flex-col lg:flex-row w-full justify-center align-middle items-center;
+  }
+}
+#trustImage .ball:hover g {
+  mix-blend-mode: normal !important;
+}
+.consumarImageMap:hover .changeColor {
+  fill: #45b8e8 !important;
+  fill-opacity: 1 !important;
+  transition: all 0.3s;
+}
+
+#aboutHover:hover #hoverSection {
+  fill-opacity: 1 !important;
+  transition: all 0.5s;
+}
