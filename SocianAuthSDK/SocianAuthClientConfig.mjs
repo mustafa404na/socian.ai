@@ -1,0 +1,7 @@
+const SOCIAN_AUTH_CLIENT_CONFIG = {
+    "client_id": "dadb584423e7569dfb52b69203272c6daf22e824",
+    "client_secret": "M0NkhIoO8qq1ZkJAVtbYC2g6wMQ3b6xl3Z9rpHywGb0=",
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgOxPmuxJjO/qJdso5PsYPp6tnBsDPibweB3+j81/GRpgHuulcYmQI+4FgR1UhkDtk7a4u5zDeViVvzevbNcncG1ye59qpDgHoSmEVf3FeDaPl72ZMGioH0TC2ZwyNmgf0Vp0GKhBHUDBSoAt77bK+xuNok+rxZR5WDKcPDlZn6PRw8zlF6xmyUTYhA2ZxW+mVwzvBwNFZFx7JijGhTzjTxSH9mu0W7q8t0FNYg0dAMFNrq3pVjzudhwPcWWhMplRydRXVL+XNdr6sFJHY/sBW6HEbbpY6mYJq0FIO8z7zWl1vQ1Xr5fL6DCwOPNQhlkyAreEtKFYg89CH2Ik4sD9l"
+  }
+
+export default SOCIAN_AUTH_CLIENT_CONFIG
